@@ -78,5 +78,52 @@
                   <p> @2025 todos os direitos reservados </p>
                 </div>
 </footer>
+
+    <div class="modal micromodal-slide" id="modal-1" class="modal" aria-hidden="true">
+        <div class="modal__overlay">
+            <div class="modal__container">
+                <header class="modal__header">
+                    <h2 class="modal__title">Carrinho de Compras</h2>
+                    <button class="modal__close" aria-label="Fechar modal"></button>
+                </header>
+                <main class="modal__content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>produtos</th>
+                                <th>descrição</th>
+                                <th>preço</th>
+                                <th>quantidade</th>
+                                <th>total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="./assets/images/camiseta_roxa.jpg" alt="Camiseta Roxa">
+                                </td>
+                                <td>Camiseta Roxa - Tamanho M</td>
+                                <td>R$ 99,90</td>
+                                <td><input type="number" value="1" min="1"></td>
+                                <td>R$ 99,90</td>
+                                <td><button class="remove-item">Remover</button></td>
+                            </tr>
+                            <!-- Adicione mais itens conforme necessário -->
+                        </tbody>
+                    </table>
+                    <p>Seu carrinho está vazio.</p>
+                </main>
+                <footer class="modal__footer">
+                    <button class="modal__btn">Continuar comprando</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js
+"></script>
 </body>
 </html>
